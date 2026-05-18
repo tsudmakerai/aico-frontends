@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aico Preview - Создай красивый landing page для AI ассистента с т</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
+  <div class="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full">
+    <h1 class="text-3xl font-bold text-gray-800 mb-4">Aico Generated App</h1>
+    <p class="text-gray-600 mb-6">Task: Создай красивый landing page для AI ассистента с темной темой, hero section с анимированным текстом, features grid и CTA кнопкой</p>
+    <div class="flex items-center justify-center gap-4">
+      <button onclick="this.nextElementSibling.textContent = parseInt(this.nextElementSibling.textContent) - 1" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">-</button>
+      <span id="counter" class="text-2xl font-bold text-gray-700">0</span>
+      <button onclick="document.getElementById('counter').textContent = parseInt(document.getElementById('counter').textContent) + 1" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition">+</button>
+    </div>
+    <p class="mt-4 text-sm text-gray-500">This is a static preview. Run <code>npm run build</code> for production build.</p>
+  </div>
+</body>
+</html>
